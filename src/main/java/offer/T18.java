@@ -22,11 +22,7 @@ public class T18 {
         return head.next;
     }
 }
-class ListNode{
-    int val;
-    ListNode next;
-    ListNode(int x){val=x;}
-}
+
 
 /**
  * 删除第i个节点，不一定需要i
