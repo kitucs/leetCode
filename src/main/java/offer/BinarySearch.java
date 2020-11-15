@@ -38,7 +38,7 @@ public class BinarySearch {
         return l;
     }
     public static int  searchNumMax(int[] nums,int target){
-        //二分查找nums中的一个数target的左侧索引
+        //二分查找nums中的一个数target的右侧索引
         int l=0,r=nums.length-1; // 注意是[l,r]
         while (l<=r){ //注意等于号
             int m =(l+r)/2;
