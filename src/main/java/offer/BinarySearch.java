@@ -2,8 +2,8 @@ package offer;
 
 public class BinarySearch {
     public static void main(String[] args) {
-        int[] nums = {1,2,3,3,3};
-        int re = BinarySearch.searchNumMax(nums,1);
+        int[] nums = {1,2,3,5,5,5};
+        int re = BinarySearch.searchNumMin(nums,4);
         System.out.println(re);
 
     }
@@ -24,6 +24,7 @@ public class BinarySearch {
     }
     public static int  searchNumMin(int[] nums,int target){
         //二分查找nums中的一个数target的左侧索引
+        // 不存在则返回大于target的第一个数字
         int l=0,r=nums.length-1; // 注意是[l,r]
         while (l<=r){ //注意等于号
             int m =(l+r)/2;

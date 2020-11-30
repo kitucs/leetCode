@@ -4,10 +4,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+    public TreeNode(int x) { val = x; }
     public static TreeNode creteTree(int[] nums){
         if(nums.length==0) return null;
         TreeNode root = new TreeNode(nums[0]);
@@ -18,7 +18,7 @@ public class TreeNode {
             TreeNode treeNode = queue.poll();
             i++;
             if(i<nums.length){
-                if(nums[i]==-1000){
+                if(nums[i]==-1 ){
                     treeNode.left = null;
                 }
                 else{

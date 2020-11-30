@@ -2,7 +2,12 @@ package test;
 
 public class Test {
     public static void main(String[] args) {
-        String a = "012345";
-        System.out.println(a.substring(0,6));
+        int[] x= {0};
+        test(x);
+        System.out.println(x[0]);
+
+    }
+    public static void test(int[] x){
+        x[0]=1;
     }
 }
