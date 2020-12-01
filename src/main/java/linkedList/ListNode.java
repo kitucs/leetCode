@@ -1,9 +1,9 @@
-package offer;
+package linkedList;
 
 
-public class ListNode{
+public class ListNode {
     public int val;
-    public  ListNode next;
+    public ListNode next;
     public ListNode(int x){val=x;}
     public static ListNode createList(int[] nums){
         ListNode head = new ListNode(0);
